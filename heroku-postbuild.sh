@@ -8,10 +8,6 @@ fi
 
 WORKSPACE_NAME=$(basename "$YARN2_WORKSPACE_PATH")
 
-# Clean up any locked caches before doing anything
-echo "Cleaning up locked caches..."
-rm -rf apps/web/node_modules/.vite apps/web/node_modules/.cache 2>/dev/null || true
-
 case "$WORKSPACE_NAME" in
   "web")
     echo "Building $WORKSPACE_NAME"
@@ -26,6 +22,11 @@ case "$WORKSPACE_NAME" in
 
     echo "Building @hylo/presenters"
     yarn workspace @hylo/presenters build
+
+    # Remove vite cache created during builds above before focusing
+    echo "Cleaning up locked caches..."
+    find /app/apps -name ".vite" -type d -exec rm -rf {} + 2>/dev/null || true
+    find /app/apps -name ".cache" -type d -exec rm -rf {} + 2>/dev/null || true
     ;;
   *)
     echo "Error: Unrecognized workspace name: $WORKSPACE_NAME"
@@ -37,5 +38,5 @@ if [ "$YARN2_SKIP_PRUNING" = "true" ]; then
   echo "Focusing on the $WORKSPACE_NAME workspace..."
   yarn workspaces focus "$WORKSPACE_NAME" --production
 else
-  echo "Warning: YARN2_SKIP_PRUNING is not set to true. All workspace dependencies will remain installed..."
+  echo "Warning: YARN2_SKIP_PRUNING is not set to true."
 fi
