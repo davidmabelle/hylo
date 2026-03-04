@@ -2,14 +2,22 @@ const sails = require('sails')
 import { v4 as uuidv4 } from 'uuid'
 var instance
 
-if (process.env.NODE_ENV === 'test') {
-  instance = {
-    track: function (opts) {
-      sails.log.verbose('Analytics.track: ' + JSON.stringify(opts))
-    }
-  }
+const noopInstance = {
+  track: function (opts) { sails.log.verbose('Analytics.track (disabled): ' + JSON.stringify(opts)) },
+  identify: function () {},
+  page: function () {},
+  flush: function (cb) { if (cb) cb() }
+}
+
+if (process.env.NODE_ENV === 'test' || !process.env.SEGMENT_KEY) {
+  instance = noopInstance
 } else {
-  instance = require('analytics-node')(process.env.SEGMENT_KEY)
+  try {
+    instance = require('analytics-node')(process.env.SEGMENT_KEY)
+  } catch (e) {
+    sails.log.warn('Analytics: Segment init failed, using noop:', e.message)
+    instance = noopInstance
+  }
 }
 
 instance.pixelUrl = function (emailName, props) {
