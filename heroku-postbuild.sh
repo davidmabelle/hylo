@@ -11,7 +11,6 @@ WORKSPACE_NAME=$(basename "$YARN2_WORKSPACE_PATH")
 case "$WORKSPACE_NAME" in
   "web")
     echo "Building $WORKSPACE_NAME"
-
     yarn workspace "$WORKSPACE_NAME" build
     ;;
   "backend")
@@ -31,6 +30,8 @@ case "$WORKSPACE_NAME" in
 esac
 
 if [ "$YARN2_SKIP_PRUNING" = "true" ]; then
+  echo "Cleaning up locked caches..."
+  rm -rf apps/web/node_modules/.vite apps/web/node_modules/.cache 2>/dev/null || true
   echo "Focusing on the $WORKSPACE_NAME workspace..."
   yarn workspaces focus "$WORKSPACE_NAME" --production
 else
