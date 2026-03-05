@@ -1,0 +1,5 @@
+[phases.install]
+cmds = ["yarn workspaces focus backend @hylo/shared @hylo/navigation @hylo/presenters"]
+
+[phases.build]
+cmds = ["YARN2_WORKSPACE_PATH=apps/backend bash heroku-postbuild.sh"]
