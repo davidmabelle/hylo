@@ -2,7 +2,7 @@
 nixPkgs = ["nodejs_20"]
 
 [phases.install]
-cmds = ["corepack enable && corepack prepare yarn@4.9.2 --activate && yarn install"]
+cmds = ["corepack enable && corepack prepare yarn@4.9.2 --activate && yarn install --no-immutable"]
 
 [phases.build]
 cmds = ["YARN2_WORKSPACE_PATH=apps/web bash heroku-postbuild.sh"]
