@@ -406,7 +406,7 @@ function AccountSettingsTab ({
       <SettingsSection>
         <h3 className='text-foreground font-bold mb-2'>{t('Calendar Subscription')}</h3>
         <p className='text-foreground/70 mb-4'>
-          {t('Create a calendar subscription for your calendar client that can automatically add and update the Hylo events you are attending.')}
+          {t('Create a calendar subscription for your calendar client that can automatically add and update the CoCreators events you are attending.')}
         </p>
         <div className='space-y-1'>
           <div className='flex items-center justify-between'>
@@ -424,7 +424,7 @@ function AccountSettingsTab ({
           {rsvpCalendarSubIsEnabled && rsvpCalendarUrl && (
             <div className={cn('flex flex-col gap-1')}>
               <p className='text-foreground/70 text-sm'>
-                {t('Copy and paste this URL into your calendar client to automatically add your Hylo RSVPs:')}
+                {t('Copy and paste this URL into your calendar client to automatically add your CoCreators RSVPs:')}
               </p>
               {!copied && (
                 <>

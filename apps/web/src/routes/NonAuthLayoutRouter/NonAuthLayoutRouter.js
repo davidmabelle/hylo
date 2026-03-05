@@ -68,7 +68,7 @@ export default function NonAuthLayoutRouter (props) {
         </div>
         <div className='flex justify-between items-center w-full px-4 absolute top-0'>
           <a href='/'>
-            <img className='h-10' src={logoSrc} alt={t('Hylo logo')} />
+            <img className='h-10' src={logoSrc} alt={t('CoCreators logo')} />
           </a>
           <LocaleDropdown renderToggleChildren={<span className='text-foreground'>{t('Locale')}: {locale} {localeDisplay}</span>} />
         </div>

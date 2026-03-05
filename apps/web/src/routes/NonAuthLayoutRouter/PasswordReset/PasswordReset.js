@@ -43,7 +43,7 @@ function PasswordReset ({ className, sendPasswordReset }) {
   return (
     <>
       <Helmet>
-        <title>{t('Reset your Hylo password')}</title>
+        <title>{t('Reset your CoCreators password')}</title>
       </Helmet>
       <div className={className}>
         <div className='bg-background/100 rounded-md p-4 w-full max-w-[320px] mx-auto'>

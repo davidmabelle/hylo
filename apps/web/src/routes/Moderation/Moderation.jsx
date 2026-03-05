@@ -80,7 +80,7 @@ export default function Moderation (props) {
   return (
     <div id='outer-container' className='flex flex-col h-full overflow-auto' ref={setContainer}>
       <Helmet>
-        <title>Moderation | {group ? `${group.name} | ` : context} | Hylo</title>
+        <title>Moderation | {group ? `${group.name} | ` : context} | CoCreators</title>
         <meta name='description' content={group ? `Moderation actions from ${group.name}. ${group.description}` : 'Group Not Found'} />
       </Helmet>
 

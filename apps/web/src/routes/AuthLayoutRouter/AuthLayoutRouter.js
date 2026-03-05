@@ -248,7 +248,7 @@ export default function AuthLayoutRouter (props) {
   return (
     <IntercomProvider appId={isTest ? '' : config.intercom.appId} autoBoot autoBootProps={intercomProps}>
       <Helmet>
-        <title>{currentGroup ? `${currentGroup.name} | ` : ''}Hylo</title>
+        <title>{currentGroup ? `${currentGroup.name} | ` : ''}CoCreators</title>
         <meta name='description' content='Prosocial Coordination for a Thriving Planet' />
         <script id='greencheck' type='application/json'>
           {`{ 'id': '${currentUser.id}', 'fullname': '${currentUser.name}', 'description': '${currentUser.tagline}', 'image': '${currentUser.avatarUrl}' }`}

@@ -206,7 +206,7 @@ function PostDetail () {
     <div ref={ref} id={`post-detail-container-${post.id}`} className={cn('PostDetail max-w-[960px] mx-auto min-w-[290px] sm:min-w-[350px] bg-background relative', { [classes.noUser]: !currentUser, [classes.headerPad]: state.atHeader })}>
       <Helmet>
         <title>
-          {`${post.title || TextHelpers.presentHTMLToText(post.details, { truncate: 20 })} | Hylo`}
+          {`${post.title || TextHelpers.presentHTMLToText(post.details, { truncate: 20 })} | CoCreators`}
         </title>
         <meta name='description' content={TextHelpers.presentHTMLToText(post.details, { truncate: MAX_DETAILS_LENGTH })} />
       </Helmet>

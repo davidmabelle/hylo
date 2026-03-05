@@ -350,7 +350,7 @@ export default function Stream (props) {
   return (
     <div id='stream-outer-container' className='flex flex-col h-full overflow-auto' ref={setContainer}>
       <Helmet>
-        <title>{name} | {group ? `${group.name} | ` : context} | Hylo</title>
+        <title>{name} | {group ? `${group.name} | ` : context} | CoCreators</title>
         <meta name='description' content={group ? `Posts from ${group.name}. ${group.description}` : 'Group Not Found'} />
       </Helmet>
 
@@ -420,7 +420,7 @@ export default function Stream (props) {
                     <>
                       <CopyToClipboard text={rsvpCalendarUrl} onCopy={onCopyRsvpCalendar}>
                         <button className='flex relative items-center group gap-2 bg-card border-2 border-foreground/20 rounded-lg p-2 hover:border-foreground/100 transition-all hover:cursor-pointer justify-between' data-tooltip-content={tooltipContent} data-tooltip-id='rsvp-cal-link-tooltip'>
-                          <span className='text-selected truncate w-[80%] max-w-[450px]'>{t('All Hylo group events you RSVP to')}</span>
+                          <span className='text-selected truncate w-[80%] max-w-[450px]'>{t('All CoCreators group events you RSVP to')}</span>
                           <div className='flex items-center gap-2 bg-foreground/10 rounded-lg p-1 group-hover:bg-selected/50 transition-all'>
                             <Icon name='Copy' /> {t('Copy')}
                           </div>

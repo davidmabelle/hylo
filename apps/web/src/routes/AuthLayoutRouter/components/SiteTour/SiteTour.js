@@ -66,7 +66,7 @@ export default function SiteTour ({ currentSiteWidth }) {
             <p>{t('To follow the tour look for the pulsing beacons!')} <span className={classes.beaconExample}><span className={classes.beaconA} /><span className={classes.beaconB} /></span></p>
             <div>
               <button className={classes.skipTour} onClick={handleCloseTour}>{t('No thanks')}</button>
-              <button className={classes.startTour} onClick={handleClickStartTour}>{t('Show me Hylo')}</button>
+              <button className={classes.startTour} onClick={handleClickStartTour}>{t('Show me CoCreators')}</button>
             </div>
             <div className={classes.speechIndicator} />
           </div>

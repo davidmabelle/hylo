@@ -63,7 +63,7 @@ export default function Consent (props) {
   return (
     <div className='bg-card shadow-md rounded-md w-full max-w-[320px]'>
       <div className='p-4'>
-        <h1 className='text-2xl font-bold mb-4 text-foreground text-center'>{t('{{appName}} wants access to your Hylo account', { appName })}</h1>
+        <h1 className='text-2xl font-bold mb-4 text-foreground text-center'>{t('{{appName}} wants access to your CoCreators account', { appName })}</h1>
         {error && formatError(error, 'Login')}
 
         <div>

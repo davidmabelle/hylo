@@ -47,7 +47,7 @@ describe('UserGroupsTab', () => {
       expect(screen.getByText('Rights of Nature Santa Cruz')).toBeInTheDocument()
 
       // Check for section headers
-      expect(screen.getByText('Hylo Groups')).toBeInTheDocument()
+      expect(screen.getByText('CoCreators Groups')).toBeInTheDocument()
       expect(screen.getByText('Other Affiliations')).toBeInTheDocument()
     })
   })

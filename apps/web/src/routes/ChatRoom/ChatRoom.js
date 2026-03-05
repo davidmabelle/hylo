@@ -602,7 +602,7 @@ export default function ChatRoom (props) {
   return (
     <div className={cn('ChatRoom h-full shadow-md flex flex-col overflow-hidden items-center justify-center', { [styles.withoutNav]: withoutNav })} ref={setContainer}>
       <Helmet>
-        <title>#{topicName} | {group ? `${group.name} | ` : ''}Hylo</title>
+        <title>#{topicName} | {group ? `${group.name} | ` : ''}CoCreators</title>
       </Helmet>
 
       <div id='chats' className='my-0 mx-auto h-[calc(100%-130px)] w-full flex flex-col flex-1 relative overflow-hidden px-1'>

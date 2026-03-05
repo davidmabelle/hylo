@@ -57,11 +57,11 @@ export default function ManageNotifications (props) {
   return (
     <>
       <Helmet>
-        <title>{t('Manage Notifications')} | Hylo</title>
+        <title>{t('Manage Notifications')} | CoCreators</title>
       </Helmet>
       <div className={cn(props.className, styles.wrapper)}>
         <h1>{t('Hi {{userName}}', { userName })}</h1>
-        <p>{t('You can change your Hylo notification settings here')}</p>
+        <p>{t('You can change your CoCreators notification settings here')}</p>
         {isEmpty(settings)
           ? t('Loading...')
           : (
