@@ -33,7 +33,7 @@ export default function OAuthLayoutRouter (props) {
   return (
     <Div100vh className='w-full h-full'>
       <Helmet>
-        <title>Hylo</title>
+        <title>CoCreators</title>
         <meta name='description' content='Prosocial Coordination for a Thriving Planet' />
       </Helmet>
       <div className='relative w-full h-full flex flex-col justify-center items-center p-2'>

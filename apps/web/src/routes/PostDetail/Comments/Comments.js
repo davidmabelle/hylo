@@ -86,7 +86,7 @@ const Comments = ({
             target={inIframe() ? '_blank' : ''}
             className={cn(classes.signupButton)}
           >
-            Join Hylo to respond
+            Join CoCreators to respond
           </Link>
           )}
     </div>

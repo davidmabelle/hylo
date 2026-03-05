@@ -18,7 +18,7 @@ export default function PublicPageHeader () {
           </a>
           <div className='flex items-center gap-4'>
             <a href='/login' className='text-foreground hover:text-foreground/80 transition-colors'>{t('Sign in')}</a>
-            <a href='/signup' className='bg-accent text-white px-4 py-2 rounded-md hover:bg-selected/90 transition-colors'>{t('Join Hylo')}</a>
+            <a href='/signup' className='bg-accent text-white px-4 py-2 rounded-md hover:bg-selected/90 transition-colors'>{t('Join CoCreators')}</a>
           </div>
         </div>
       </div>

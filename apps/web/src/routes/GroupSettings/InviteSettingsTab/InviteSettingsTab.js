@@ -45,7 +45,7 @@ function InviteSettingsTab (props) {
 
   const defaultMessage = t(`Hi!
 
-I'm inviting you to join {{name}} on Hylo.
+I'm inviting you to join {{name}} on CoCreators.
 
 {{name}} is using Hylo for our online community: this is our dedicated space for communication & collaboration.`, { name: group.name })
 

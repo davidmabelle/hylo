@@ -1,4 +1,4 @@
-// Theme definitions for Hylo
+// Theme definitions for CoCreators
 export const baseTheme = {
   light: {
     darkening: '39 9% 2%',
@@ -391,6 +391,7 @@ export const stoneTheme = {
 }
 
 export const themes = {
+  cocreators: cocreatorsTheme,
   default: baseTheme,
   stone: stoneTheme,
   forest: forestTheme,
@@ -402,4 +403,68 @@ export const themes = {
   fall: fallTheme
 }
 
-export const defaultTheme = 'default'
+
+export const cocreatorsTheme = {
+  light: {
+    darkening: '220 60% 2%',
+    background: '210 40% 96%',
+    'context-menu-background': '210 40% 92%',
+    midground: '210 30% 98%',
+    foreground: '220 40% 10%',
+    selected: '196 94% 48%',
+    card: '0 0% 100%',
+    'card-foreground': '220 40% 10%',
+    popover: '0 0% 100%',
+    'popover-foreground': '220 40% 10%',
+    primary: '221 83% 53%',
+    'primary-foreground': '0 0% 100%',
+    secondary: '196 94% 48%',
+    'secondary-foreground': '0 0% 100%',
+    muted: '210 20% 92%',
+    'muted-foreground': '220 15% 45%',
+    accent: '196 94% 42%',
+    'accent-foreground': '0 0% 100%',
+    destructive: '0 84% 60%',
+    'destructive-foreground': '0 0% 98%',
+    error: '0 84% 60%',
+    'error-foreground': '0 0% 98%',
+    focus: '221 83% 53%',
+    border: '210 20% 88%',
+    input: '210 20% 100%',
+    ring: '221 83% 53%',
+    'theme-background': '220 60% 8%',
+    'theme-highlight': '221 83% 30%'
+  },
+  dark: {
+    darkening: '220 60% 2%',
+    background: '220 35% 12%',
+    'context-menu-background': '220 35% 14%',
+    midground: '220 30% 16%',
+    foreground: '210 20% 95%',
+    card: '220 30% 18%',
+    'card-foreground': '210 20% 95%',
+    popover: '220 35% 10%',
+    'popover-foreground': '0 0% 98%',
+    primary: '221 83% 58%',
+    'primary-foreground': '0 0% 100%',
+    secondary: '196 94% 42%',
+    'secondary-foreground': '0 0% 98%',
+    selected: '196 94% 40%',
+    muted: '220 25% 18%',
+    'muted-foreground': '210 15% 62%',
+    accent: '196 94% 42%',
+    'accent-foreground': '0 0% 98%',
+    destructive: '0 86% 59%',
+    'destructive-foreground': '0 0% 98%',
+    error: '0 84% 60%',
+    errorForeground: '0 0% 98%',
+    focus: '196 94% 48%',
+    border: '220 25% 20%',
+    input: '220 25% 10%',
+    ring: '221 83% 58%',
+    'theme-background': '220 60% 6%',
+    'theme-highlight': '221 83% 25%'
+  }
+}
+
+export const defaultTheme = 'cocreators'

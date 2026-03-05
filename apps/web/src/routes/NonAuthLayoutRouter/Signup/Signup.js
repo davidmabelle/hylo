@@ -84,10 +84,10 @@ export default function Signup (props) {
   return (
     <>
       <Helmet>
-        <title>{t('Sign up for Hylo')}</title>
+        <title>{t('Sign up for CoCreators')}</title>
       </Helmet>
       <div className='bg-background/100 rounded-md p-4 w-full max-w-[320px] mx-auto'>
-        <h1 className='text-2xl font-bold mb-0 text-foreground text-center'>{t('Welcome to Hylo')}</h1>
+        <h1 className='text-2xl font-bold mb-0 text-foreground text-center'>{t('Welcome to CoCreators')}</h1>
         <p className='mb-4 text-foreground/80 text-center mt-0'>{t('Enter your email to get started:')}</p>
 
         {error && formatError(error, 'Signup', t)}

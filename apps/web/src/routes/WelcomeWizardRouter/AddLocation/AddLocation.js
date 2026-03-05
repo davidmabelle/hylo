@@ -87,7 +87,7 @@ class AddLocation extends Component {
             </p>
           </div>
           <div>
-            <WelcomeWizardModalFooter submit={this.submit} previous={this.previous} continueText={t('Next: Welcome to Hylo!')} />
+            <WelcomeWizardModalFooter submit={this.submit} previous={this.previous} continueText={t('Next: Welcome to CoCreators!')} />
           </div>
         </div>
       </div>

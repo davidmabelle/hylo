@@ -39,7 +39,7 @@ export function inIframe () {
   return window.location !== window.parent.location
 }
 
-// TOOD: Move to HyloShared and reconcile with use of `validator.isEmail` in Mobile
+// TOOD: Move to CoCreatorsShared and reconcile with use of `validator.isEmail` in Mobile
 /* eslint-disable */
 export const validateEmail = email => {
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/

@@ -59,7 +59,7 @@ export default function NonAuthLayoutRouter (props) {
   return (
     <Div100vh className='w-full h-full'>
       <Helmet>
-        <title>Hylo</title>
+        <title>CoCreators</title>
         <meta name='description' content='Prosocial Coordination for a Thriving Planet' />
       </Helmet>
       <div className='relative w-full h-full flex flex-col justify-center items-center p-2'>
@@ -143,7 +143,7 @@ export default function NonAuthLayoutRouter (props) {
             element={
               <div className='bg-background/100 rounded-md w-full max-w-[320px] mx-auto p-4 mt-4 text-sm'>
                 <Link className='flex items-center justify-between gap-2 text-foreground' tabIndex={-1} to='/signup'>
-                  {t('Not a member of Hylo?')} <Button variant='outline'>{t('Sign Up')}</Button>
+                  {t('Not a member of CoCreators?')} <Button variant='outline'>{t('Sign Up')}</Button>
                 </Link>
               </div>
             }

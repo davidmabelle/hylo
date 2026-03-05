@@ -121,7 +121,7 @@ export default function Consent (props) {
           {offlineAccessRequested
             ? (
               <div>
-                {t('{{appName}} is asking to have offline access to Hylo', { appName })}
+                {t('{{appName}} is asking to have offline access to CoCreators', { appName })}
                 {/* XXX: Don't know currently how to tell here if the client is asking for offline_access but already granted it
                   {isEmpty(missingOIDCScopes) || !missingOIDCScopes.includes('offline_access')
                   ? <p>(which you've previously granted)</p>

@@ -32,7 +32,7 @@ export default function GroupExplorer ({
     <div className='w-full max-w-screen-md mx-auto pt-8 pb-8 min-h-screen'>
       <Helmet>
         <title>{t('Group Explorer')} | Hylo</title>
-        <meta name='description' content='Find the others on Hylo' />
+        <meta name='description' content='Find the others on CoCreators' />
       </Helmet>
       <FeaturedGroups groupIds={FEATURED_GROUP_IDS} />
       <GroupSearch viewFilter={viewFilter} changeView={handleChangeViewFilter} />

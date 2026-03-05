@@ -2,7 +2,7 @@ import React from 'react'
 import { Undo2, Redo2, RemoveFormatting } from 'lucide-react'
 import classes from './HyloEditor.module.scss'
 
-export default function HyloEditorBottomMenuBar ({ editor }) {
+export default function CoCreatorsEditorBottomMenuBar ({ editor }) {
   if (!editor) return null
 
   return (

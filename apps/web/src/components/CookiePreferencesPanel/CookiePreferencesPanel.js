@@ -60,7 +60,7 @@ export default function CookiePreferencesPanel () {
         {/* Header and description */}
         <div className={cn('text-center sm:text-left')}>
           <h2 className={cn('text-lg font-bold mb-1')}>{t('Cookie Preferences')}</h2>
-          <p className={cn('text-sm text-muted-foreground')}>{t('We use essential cookies to help understand whether you are logged in and to understand your preferences and where you are in Hylo.')}</p>
+          <p className={cn('text-sm text-muted-foreground')}>{t('We use essential cookies to help understand whether you are logged in and to understand your preferences and where you are in CoCreators.')}</p>
         </div>
 
         <h3 className={cn('text-sm font-semibold mt-2 text-foreground mb-0 mt-0')}>{t('Other Cookies')}</h3>
@@ -85,7 +85,7 @@ export default function CookiePreferencesPanel () {
                 </button>
               </div>
               {showInfo && (
-                <p className={cn('text-xs text-muted-foreground mt-1')}>{t('We use a service called Mixpanel to understand how people like you use Hylo. Your identity is anonymized but your behavior is recorded so that we can make improvements to Hylo based on how people are using it.')}</p>
+                <p className={cn('text-xs text-muted-foreground mt-1')}>{t('We use a service called Mixpanel to understand how people like you use CoCreators. Your identity is anonymized but your behavior is recorded so that we can make improvements to CoCreators based on how people are using it.')}</p>
               )}
             </div>
           </div>
@@ -109,7 +109,7 @@ export default function CookiePreferencesPanel () {
                 </button>
               </div>
               {showInfo && (
-                <p className={cn('text-xs text-muted-foreground mt-1')}>{t('When people on Hylo need help or want to report a bug, they are interacting with a service called Intercom. Intercom stores cookies in your browser to keep track of conversations with us, the development team.')}</p>
+                <p className={cn('text-xs text-muted-foreground mt-1')}>{t('When people on CoCreators need help or want to report a bug, they are interacting with a service called Intercom. Intercom stores cookies in your browser to keep track of conversations with us, the development team.')}</p>
               )}
             </div>
           </div>

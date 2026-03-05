@@ -53,7 +53,7 @@ export default function CreateModalChooser () {
           </Link>
         )
       })}
-      {/* Creating a Group by location is not currently supported in HyloApp */}
+      {/* Creating a Group by location is not currently supported in CoCreatorsApp */}
       {!isWebView() && (
         <Link to='/create-group'>
           <div key='group'>
