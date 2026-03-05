@@ -159,9 +159,9 @@ function UserGroupsTab () {
 
   return (
     <div className='p-4 max-w-4xl mx-auto'>
-      <div className='text-foreground/70 mb-6'>{t('This list shows which groups on Hylo you are a part of. You can also share your affiliations with organizations that are not currently on Hylo, which will appear on your profile.')}</div>
+      <div className='text-foreground/70 mb-6'>{t('This list shows which groups on CoCreators you are a part of. You can also share your affiliations with organizations that are not currently on CoCreators, which will appear on your profile.')}</div>
 
-      <h2 className='text-xl font-bold mb-4 text-foreground'>{t('Hylo Groups')}</h2>
+      <h2 className='text-xl font-bold mb-4 text-foreground'>{t('CoCreators Groups')}</h2>
       {action === LEAVE_GROUP && displayMessage && <Message errorMessage={errorMessage} successMessage={successMessage} reset={resetMessage} />}
       {memberships.map(m => {
         const group = {

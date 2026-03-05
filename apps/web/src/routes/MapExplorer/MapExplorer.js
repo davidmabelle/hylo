@@ -739,7 +739,7 @@ function MapExplorer (props) {
   return (
     <div className={cn(classes.container, { [classes.noUser]: !currentUser, [classes.withoutNav]: withoutNav })}>
       <Helmet>
-        <title>Map | {group ? `${group.name} | ` : context === 'public' ? 'Public | ' : ' All My Groups | '}Hylo</title>
+        <title>Map | {group ? `${group.name} | ` : context === 'public' ? 'Public | ' : ' All My Groups | '}CoCreators</title>
       </Helmet>
 
       <div className='flex-1 h-full relative' data-testid='map-container'>

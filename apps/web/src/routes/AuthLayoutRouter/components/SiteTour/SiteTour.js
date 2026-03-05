@@ -34,14 +34,14 @@ export default function SiteTour ({ currentSiteWidth }) {
     steps.push({
       target: '#groupMenu',
       title: t('Create & navigate'),
-      content: t('Here you can switch between types of content and create new content for people in your group or everyone on Hylo!'),
+      content: t('Here you can switch between types of content and create new content for people in your group or everyone on CoCreators!'),
       placement: 'right'
     })
   }
   steps.push({
     target: '#personalSettings',
     title: t('Messages, notifications & profile'),
-    content: t('Search for posts & people. Send messages to group members or people you see on Hylo. Stay up to date with current events and edit your profile.')
+    content: t('Search for posts & people. Send messages to group members or people you see on CoCreators. Stay up to date with current events and edit your profile.')
   })
 
   const handleClickStartTour = (e) => {
@@ -62,11 +62,11 @@ export default function SiteTour ({ currentSiteWidth }) {
         <div className={classes.tourPrompt}>
           <div className={classes.tourGuide}><img src='/axolotl-tourguide.png' /></div>
           <div className={classes.tourExplanation}>
-            <p><strong>{t('Welcome to Hylo')} {currentUser.name}</strong> {t('I\'d love to show you how things work, would you like a quick tour?')}</p>
+            <p><strong>{t('Welcome to CoCreators')} {currentUser.name}</strong> {t('I\'d love to show you how things work, would you like a quick tour?')}</p>
             <p>{t('To follow the tour look for the pulsing beacons!')} <span className={classes.beaconExample}><span className={classes.beaconA} /><span className={classes.beaconB} /></span></p>
             <div>
               <button className={classes.skipTour} onClick={handleCloseTour}>{t('No thanks')}</button>
-              <button className={classes.startTour} onClick={handleClickStartTour}>{t('Show me Hylo')}</button>
+              <button className={classes.startTour} onClick={handleClickStartTour}>{t('Show me CoCreators')}</button>
             </div>
             <div className={classes.speechIndicator} />
           </div>

@@ -311,7 +311,7 @@ function AccountSettingsTab ({
                 {t('If you deactivate your account:')}
               </h4>
               <ul className='list-disc list-inside space-y-1 text-sm text-foreground/70'>
-                <li>{t('You won\'t be able to use Hylo unless you log back in')}</li>
+                <li>{t('You won\'t be able to use CoCreators unless you log back in')}</li>
                 <li>{t('You won\'t receive platform notifications')}</li>
                 <li>{t('Your profile won\'t show up in any member searches or group memberships')}</li>
                 <li>{t('Your comments and posts will REMAIN as they are')}</li>
@@ -344,7 +344,7 @@ function AccountSettingsTab ({
               <ul className='list-disc list-inside space-y-1 text-sm text-foreground/70'>
                 <li>{t('Your account and its details will be deleted')}</li>
                 <li>{t('The content of your posts and comments will be removed')}</li>
-                <li>{t('You won\'t be able to use Hylo unless you create a brand new account')}</li>
+                <li>{t('You won\'t be able to use CoCreators unless you create a brand new account')}</li>
               </ul>
             </div>
           </div>
@@ -358,7 +358,7 @@ function AccountSettingsTab ({
       <SettingsSection>
         <h3 className='text-foreground font-bold mb-2'>{t('Cookie Preferences')}</h3>
         <p className='text-foreground/70 mb-4'>
-          {t('We use cookies to help understand whether you are logged in and to understand your preferences and where you are in Hylo.')}
+          {t('We use cookies to help understand whether you are logged in and to understand your preferences and where you are in CoCreators.')}
         </p>
         <div className='space-y-4'>
           <div className='flex items-center justify-between'>
@@ -367,10 +367,10 @@ function AccountSettingsTab ({
                 <h4 className='text-foreground font-medium'>{t('Analytics (Mixpanel)')}</h4>
               </div>
               <p className='text-foreground/70 text-sm'>
-                {t('We use a service called Mixpanel to understand how people like you use Hylo. Your identity is anonymized but your behavior is recorded so that we can make improvements to Hylo based on how people are using it.')}
+                {t('We use a service called Mixpanel to understand how people like you use CoCreators. Your identity is anonymized but your behavior is recorded so that we can make improvements to CoCreators based on how people are using it.')}
               </p>
               <p className='text-xs text-muted-foreground mt-1'>
-                {t('This helps us understand how people use Hylo so we can improve the platform. Your data is anonymized and aggregated.')}
+                {t('This helps us understand how people use CoCreators so we can improve the platform. Your data is anonymized and aggregated.')}
               </p>
             </div>
             <Switch
@@ -384,7 +384,7 @@ function AccountSettingsTab ({
                 <h4 className='text-foreground font-medium'>{t('Support (Intercom)')}</h4>
               </div>
               <p className='text-foreground/70 text-sm'>
-                {t('When people on Hylo need help or want to report a bug, they are interacting with a service called Intercom. Intercom stores cookies in your browser to keep track of conversations with us, the development team.')}
+                {t('When people on CoCreators need help or want to report a bug, they are interacting with a service called Intercom. Intercom stores cookies in your browser to keep track of conversations with us, the development team.')}
               </p>
               <p className='text-xs text-muted-foreground mt-1'>
                 {t('This helps us provide better customer support and track bug reports. Your conversations are stored securely.')}
@@ -406,7 +406,7 @@ function AccountSettingsTab ({
       <SettingsSection>
         <h3 className='text-foreground font-bold mb-2'>{t('Calendar Subscription')}</h3>
         <p className='text-foreground/70 mb-4'>
-          {t('Create a calendar subscription for your calendar client that can automatically add and update the Hylo events you are attending.')}
+          {t('Create a calendar subscription for your calendar client that can automatically add and update the CoCreators events you are attending.')}
         </p>
         <div className='space-y-1'>
           <div className='flex items-center justify-between'>
@@ -424,7 +424,7 @@ function AccountSettingsTab ({
           {rsvpCalendarSubIsEnabled && rsvpCalendarUrl && (
             <div className={cn('flex flex-col gap-1')}>
               <p className='text-foreground/70 text-sm'>
-                {t('Copy and paste this URL into your calendar client to automatically add your Hylo RSVPs:')}
+                {t('Copy and paste this URL into your calendar client to automatically add your CoCreators RSVPs:')}
               </p>
               {!copied && (
                 <>

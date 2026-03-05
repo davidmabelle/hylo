@@ -173,7 +173,7 @@ const MemberProfile = ({ currentTab = 'Overview', blockConfirmMessage, isSingleC
     <div className='h-full overflow-auto flex flex-col items-center px-2 sm:px-0' ref={setContainer}>
       <div className={cn('w-full', styles.memberProfile)}>
         <Helmet>
-          <title>{person.name} | Hylo</title>
+          <title>{person.name} | CoCreators</title>
           <meta name='description' content={`${person.name}: ${t('Member Profile')}`} />
         </Helmet>
         <div className='flex flex-col items-center w-full'>
@@ -246,7 +246,7 @@ const MemberProfile = ({ currentTab = 'Overview', blockConfirmMessage, isSingleC
             {memberships && memberships.length > 0
               ? (
                 <div className='border-2 mt-8 border-t-foreground/30 border-x-foreground/20 border-b-foreground/10 p-4 background-black/10 rounded-lg border-dashed relative mb-4'>
-                  <div className='text-sm bg-midground text-foreground/50 uppercase absolute -top-2.5 left-1/2 -translate-x-1/2 px-2 text-center'>{t('Hylo Groups')}</div>
+                  <div className='text-sm bg-midground text-foreground/50 uppercase absolute -top-2.5 left-1/2 -translate-x-1/2 px-2 text-center'>{t('CoCreators Groups')}</div>
                   <div
                     ref={groupsRef}
                     className='flex flex-row flex-wrap items-center justify-center w-full overflow-hidden relative gap-2'
@@ -270,7 +270,7 @@ const MemberProfile = ({ currentTab = 'Overview', blockConfirmMessage, isSingleC
                 </div>)
               : (
                 <div className='border-2 mt-8 border-t-foreground/30 border-x-foreground/20 border-b-foreground/10 p-4 background-black/10 rounded-lg border-dashed relative mb-4 text-center'>
-                  <div className='text-sm bg-midground text-foreground/50 absolute -top-2.5 left-1/2 -translate-x-1/2 px-2 text-center'>{t('Hylo Groups')}</div>
+                  <div className='text-sm bg-midground text-foreground/50 absolute -top-2.5 left-1/2 -translate-x-1/2 px-2 text-center'>{t('CoCreators Groups')}</div>
                   <p className='text-foreground/50 mb-3'>{t('Find groups to join and collaborate with others')}</p>
                   <button
                     onClick={() => push('/groups/explorer')}

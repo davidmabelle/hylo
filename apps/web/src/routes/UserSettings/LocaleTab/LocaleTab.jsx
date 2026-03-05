@@ -24,7 +24,7 @@ export default function LocaleTab ({ currentUser }) {
   return (
     <div className='p-4'>
       <p className='my-5 text-foreground/100 text-base'>
-        {t('Select your preferred language for the Hylo interface')}
+        {t('Select your preferred language for the CoCreators interface')}
       </p>
       <LocaleDropdown renderToggleChildren={<span>{localeFlag} {t(localeWord)} <Icon name='ArrowDown' /></span>} />
     </div>

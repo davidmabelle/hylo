@@ -94,7 +94,7 @@ function Members (props) {
   return (
     <div className='h-auto max-w-[750px] mx-auto' id='members-page'>
       <Helmet>
-        <title>{t('Members')} | {group ? `${group.name} | ` : ''}Hylo</title>
+        <title>{t('Members')} | {group ? `${group.name} | ` : ''}CoCreators</title>
       </Helmet>
       {myResponsibilityTitles.includes(RESP_ADD_MEMBERS) && (
         <div className='flex items-center justify-between p-2'>

@@ -78,7 +78,7 @@ function setVideo (editor) {
   }
 }
 
-export default function HyloEditorMenuBar ({ className, editor, extendedMenu, type, id }) {
+export default function CoCreatorsEditorMenuBar ({ className, editor, extendedMenu, type, id }) {
   const [linkModalOpen, setLinkModalOpen] = useState(false)
 
   if (!editor) return null
@@ -234,7 +234,7 @@ export default function HyloEditorMenuBar ({ className, editor, extendedMenu, ty
   )
 }
 
-function HyloEditorMenuBarButton ({ active, Icon, onClick, hideOnMobile = false }) {
+function CoCreatorsEditorMenuBarButton ({ active, Icon, onClick, hideOnMobile = false }) {
   return (
     <button
       tabIndex='-1'

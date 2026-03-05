@@ -1,5 +1,11 @@
+[phases.setup]
+nixPkgs = ["nodejs_20", "python3", "gnumake", "gcc"]
+
 [phases.install]
-cmds = ["yarn workspaces focus backend @hylo/shared @hylo/navigation @hylo/presenters"]
+cmds = ["corepack enable && corepack prepare yarn@4.9.2 --activate && yarn install --no-immutable"]
 
 [phases.build]
-cmds = ["YARN2_WORKSPACE_PATH=apps/backend bash heroku-postbuild.sh"]
+cmds = ["YARN2_WORKSPACE_PATH=apps/web bash heroku-postbuild.sh"]
+
+[start]
+cmd = "node apps/web/dist/server/index.js"

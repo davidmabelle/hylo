@@ -33,7 +33,7 @@ export default function OAuthLayoutRouter (props) {
   return (
     <Div100vh className='w-full h-full'>
       <Helmet>
-        <title>Hylo</title>
+        <title>CoCreators</title>
         <meta name='description' content='Prosocial Coordination for a Thriving Planet' />
       </Helmet>
       <div className='relative w-full h-full flex flex-col justify-center items-center p-2'>
@@ -42,7 +42,7 @@ export default function OAuthLayoutRouter (props) {
         </div>
         <div className='flex justify-between items-center w-full px-4 absolute top-0'>
           <a href='/'>
-            <img className='h-10' src={logoSrc} alt={t('Hylo logo')} />
+            <img className='h-10' src={logoSrc} alt={t('CoCreators logo')} />
           </a>
           <LocaleDropdown renderToggleChildren={<span className='text-foreground'>{t('Locale')}: {locale} {localeDisplay}</span>} />
         </div>
@@ -62,7 +62,7 @@ export default function OAuthLayoutRouter (props) {
             path='login/*'
             element={
               <div className='bg-background/100 rounded-md w-full max-w-[320px] mx-auto p-4 mt-4'>
-                <p>{t('Use your Hylo account to access {{name}}.', { name: getQuerystringParam('name', location) || thisApplicationText })}</p>
+                <p>{t('Use your CoCreators account to access {{name}}.', { name: getQuerystringParam('name', location) || thisApplicationText })}</p>
               </div>
             }
           />

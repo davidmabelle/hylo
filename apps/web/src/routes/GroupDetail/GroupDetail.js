@@ -123,7 +123,7 @@ function GroupDetail ({ forCurrentGroup = false }) {
   return (
     <div className={cn('GroupDetail relative mx-auto', { 'w-full max-w-[750px] my-4': fullPage, 'w-screen-lg': !fullPage, [g.isAboutCurrentGroup]: isAboutCurrentGroup })}>
       <Helmet>
-        <title>{group.name} | Hylo</title>
+        <title>{group.name} | CoCreators</title>
         <meta name='description' content={TextHelpers.truncateHTML(group.description, MAX_DETAILS_LENGTH)} />
       </Helmet>
 

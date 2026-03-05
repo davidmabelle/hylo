@@ -25,7 +25,7 @@ function transformVideoTags (html) {
   })
 }
 
-export default function HyloHTML ({
+export default function CoCreatorsHTML ({
   html,
   element = 'div',
   className,

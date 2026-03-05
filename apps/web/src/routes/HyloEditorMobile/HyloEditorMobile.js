@@ -13,7 +13,7 @@ import HyloEditor from 'components/HyloEditor'
   `postMessage(JSON.stringify({ type: 'SET_PROPS', data: { readOnly: true } }))`
 
 */
-export default function HyloEditorMobile (props) {
+export default function CoCreatorsEditorMobile (props) {
   const editorRef = useRef()
   const [contentHTML, setContentHTML] = useState()
   const [groupIds, setGroupIds] = useState()

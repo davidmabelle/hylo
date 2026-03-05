@@ -1,0 +1,8 @@
+**/node_modules
+**/.yarn/cache
+**/dist
+**/build
+**/.next
+**/coverage
+apps/mobile
+apps/desktop

@@ -77,7 +77,7 @@ export default function CreateMenu ({ coordinates, mapView }) {
             </div>
           </Link>
         )}
-        {/* Creating a Group by location is not currently supported in HyloApp */}
+        {/* Creating a Group by location is not currently supported in CoCreatorsApp */}
         {!isWebView() && (
           <Link to='/create-group' key='group' className='text-foreground transition-all hover:scale-105 hover:text-foreground group'>
             <div className='flex text-base items-center p-0 rounded-lg border-2 border-foreground/20 hover:border-foreground/50 transition-all p-1 px-2'>

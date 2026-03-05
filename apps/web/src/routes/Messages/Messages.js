@@ -187,7 +187,7 @@ const Messages = () => {
   return (
     <div className={cn('flex flex-col w-full h-full justify-center w-full', { [classes.messagesOpen]: messageThreadId })}>
       <Helmet>
-        <title>Messages | Hylo</title>
+        <title>Messages | CoCreators</title>
       </Helmet>
       {messageThreadId && (
         <div className='flex flex-col h-full w-full px-3'>

@@ -121,7 +121,7 @@ export default function FinishRegistration () {
               'w-full text-center rounded-2xl flex items-center justify-center px-5 py-2 transition-colors',
               canSubmit ? 'bg-primary text-primary-foreground hover:bg-primary/90' : 'bg-muted text-muted-foreground cursor-not-allowed'
             )}
-            label={t('Jump in to Hylo!')}
+            label={t('Jump in to CoCreators!')}
             onClick={canSubmit ? () => handleSubmit() : null}
           />
         </div>

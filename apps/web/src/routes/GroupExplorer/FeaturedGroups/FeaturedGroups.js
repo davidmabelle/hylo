@@ -70,7 +70,7 @@ export default function FeaturedGroups ({ groupIds = [] }) {
           position='bottom'
           content={() => (
             <div className='text-xs'>
-              {t('To recommend a group to be featured, join building Hylo')}
+              {t('To recommend a group to be featured, join building CoCreators')}
             </div>
           )}
         />
